@@ -4,8 +4,9 @@ import sys,getopt
 #global use variables
 apikey = open('apikey_nm.txt').read().splitlines()
 access_key=apikey[0]
-secret_key=apikey[1]  
-base_url = 'https://s-tenagt01-mgt:8834'
+secret_key=apikey[1]
+nm_host='[host]'
+base_url = 'https://[]:8834'.format(nm_host)
 headers = {'Accept': 'application/json', 'X-APIKeys': 'accessKey={}; secretKey={}'.format(access_key, secret_key)}
 
 #get group list

@@ -6,7 +6,7 @@ from getpass import getpass
 
 apikey = open('apikey.txt').read().splitlines()
 
-sc = TenableSC(host='s-tenable01-mgt.ltcpartners.com',
+sc = TenableSC(host='something.somewhere.com',
                access_key=apikey[0],
                secret_key=apikey[1])
 
